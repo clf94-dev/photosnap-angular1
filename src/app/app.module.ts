@@ -18,6 +18,7 @@ import { HomeComponent } from './components/pages/home/home.component';
 import { PricingComponent } from './components/pages/pricing/pricing.component';
 import { FeaturesComponent } from './components/pages/features/features.component';
 import { StoriesComponent } from './components/pages/stories/stories.component';
+import { appRoutingProviders, routing } from './app.routing';
 
 @NgModule({
   declarations: [
@@ -40,9 +41,10 @@ import { StoriesComponent } from './components/pages/stories/stories.component';
     StoriesComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    routing
   ],
-  providers: [],
+  providers: [appRoutingProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
