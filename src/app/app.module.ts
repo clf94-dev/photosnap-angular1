@@ -14,6 +14,10 @@ import { StoriesHomeComponent } from './components/stories-home/stories-home.com
 import { TopFeaturesComponent } from './components/top-features/top-features.component';
 import { TopPricingComponent } from './components/top-pricing/top-pricing.component';
 import { TopStoriesComponent } from './components/top-stories/top-stories.component';
+import { HomeComponent } from './components/pages/home/home.component';
+import { PricingComponent } from './components/pages/pricing/pricing.component';
+import { FeaturesComponent } from './components/pages/features/features.component';
+import { StoriesComponent } from './components/pages/stories/stories.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +33,11 @@ import { TopStoriesComponent } from './components/top-stories/top-stories.compon
     StoriesHomeComponent,
     TopFeaturesComponent,
     TopPricingComponent,
-    TopStoriesComponent
+    TopStoriesComponent,
+    HomeComponent,
+    PricingComponent,
+    FeaturesComponent,
+    StoriesComponent
   ],
   imports: [
     BrowserModule
