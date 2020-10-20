@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 
 @Component({
@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./features-card.component.scss']
 })
 export class FeaturesCardComponent implements OnInit {
+@Input() title: string;
+@Input() text: string;
+@Input() src: string;
+@Input() imgAlt: string;
 
   constructor() { 
    
