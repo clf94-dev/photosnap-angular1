@@ -1,3 +1,3 @@
-<div >
-    <app-intro-home-card  [index]="i"  [title]="data.title" [text]="data.text" [classes]="data.classes" [btn]="data.btn" [btnStyle]="data.btnStyle" [arrow]="data.arrow" [link]="data.link" [src]="data.src" [imgAlt]="data.imgAlt" ></app-intro-home-card>
+<div *ngFor="let data of introdata;let i=index">
+    <app-intro-home-card    [title]="data.title" [text]="data.text" [classes]="data.classes" [btn]="data.btn" [btnStyle]="data.btnStyle" [arrow]="data.arrow" [link]="data.link" [src]="data.src" [imgAlt]="data.imgAlt" ></app-intro-home-card>
 </div>

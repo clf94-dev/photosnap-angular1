@@ -20,6 +20,7 @@ import { FeaturesComponent } from './components/pages/features/features.componen
 import { StoriesComponent } from './components/pages/stories/stories.component';
 import { appRoutingProviders, routing } from './app.routing';
 import { IntroHomeCardComponent } from './components/intro-home-card/intro-home-card.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { IntroHomeCardComponent } from './components/intro-home-card/intro-home-
   ],
   imports: [
     BrowserModule,
-    routing
+    routing,
+    FlexLayoutModule
   ],
   providers: [appRoutingProviders],
   bootstrap: [AppComponent]
