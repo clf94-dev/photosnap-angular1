@@ -21,6 +21,8 @@ import { StoriesComponent } from './components/pages/stories/stories.component';
 import { appRoutingProviders, routing } from './app.routing';
 import { IntroHomeCardComponent } from './components/intro-home-card/intro-home-card.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { FeaturesCardComponent } from './components/features-card/features-card.component';
+import { StoriesCardComponent } from './components/stories-card/stories-card.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     PricingComponent,
     FeaturesComponent,
     StoriesComponent,
-    IntroHomeCardComponent
+    IntroHomeCardComponent,
+    FeaturesCardComponent,
+    StoriesCardComponent
   ],
   imports: [
     BrowserModule,
