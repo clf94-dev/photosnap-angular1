@@ -1,5 +1,8 @@
 <div fxLayout="row wrap" class="feat-cont">
-<div  *ngFor="let data of featuresdata; let i=index" >
-    <app-features-card [title]="data.title" [text]="data.text" [src]="data.src" [imgAlt]="data.imgAlt" ></app-features-card>
-</div>
+
+    <div class="feat-card" fxFlex.xs="100%" fxFlex.sm="33%" fxFlex.md="33%" fxFlex.lg="33%" *ngFor="let data of featuresdata; let i=index">
+        <img src="{{data.src}}" alt="{{data.imgAlt}}"/>
+        <h3>{{data.title}}</h3>
+        <p>{{data.text}}</p>
+    </div>
 </div>
