@@ -1,0 +1,55 @@
+$pureBlack: #000000;
+$lightGrey: #DFDFDF;
+$pureWhite: #ffffff;
+$font: 'DM Sans',
+sans-serif;
+
+//------------------------------Home Intro Section-------------------
+.intro-row {
+    .img-col {
+        @media screen and (max-width: 500px){
+            width: 100%;
+        }
+        @media screen and (min-width:500px) and (max-width: 800px){
+            width:42%;
+        }
+        width: 58%;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .text-col {
+    @media screen and (max-width: 500px){
+        width: 100%;
+    }
+    @media screen and (min-width:500px) and (max-width: 800px){
+        width:58%;
+    }
+    width: 42%;
+        padding: 12% 11% 15% 7%;
+        h2 {
+            font-size: 40px;
+            text-transform: uppercase;
+            font-weight: normal;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 16px;
+            font-weight: normal;
+            line-height: 2rem;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.dark {
+    background-color: black;
+    color: white;
+}
+
+.reversed {
+    @media screen and (min-width: 500px) {
+        flex-direction: row-reverse !important;
+    }
+}
