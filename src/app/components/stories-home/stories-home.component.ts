@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./stories-home.component.scss']
 })
 export class StoriesHomeComponent implements OnInit {
-
+arrow="../../../assets/images/shared/desktop/arrow.svg"
   constructor() { }
 
   ngOnInit(): void {
