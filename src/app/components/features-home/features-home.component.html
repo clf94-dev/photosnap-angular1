@@ -1,4 +1,4 @@
-<div fxLayout="row wrap">
+<div fxLayout="row wrap" class="feat-cont">
 <div  *ngFor="let data of featuresdata; let i=index" >
     <app-features-card [title]="data.title" [text]="data.text" [src]="data.src" [imgAlt]="data.imgAlt" ></app-features-card>
 </div>
