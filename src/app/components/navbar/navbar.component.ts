@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 logo='../../../assets/images/shared/desktop/logo.svg';
-  constructor() { }
+  constructor(private _route: ActivatedRoute, private _router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  goToHome(){
+    this._router.navigate(['/home']);
   }
 
 }
