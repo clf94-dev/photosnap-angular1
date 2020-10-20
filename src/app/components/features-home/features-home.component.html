@@ -1,1 +1,4 @@
-<p>features-home works!</p>
+
+<div *ngFor="let data of featuresdata; let i=index">
+    <app-features-card [title]="data.title" [text]="data.text" [src]="data.src" [imgAlt]="data.imgAlt" ></app-features-card>
+</div>
