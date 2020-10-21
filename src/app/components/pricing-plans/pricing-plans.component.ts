@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pricing-plans.component.scss']
 })
 export class PricingPlansComponent implements OnInit {
-
-  constructor() { }
+public year: boolean;
+  constructor() { 
+    this.year=false;
+  }
 
   ngOnInit(): void {
+  }
+
+  changePrice(){
+this.year=!this.year;
   }
 
 }
