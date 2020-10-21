@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./top-stories.component.scss']
 })
 export class TopStoriesComponent implements OnInit {
-
+topStories="../../../assets/images/stories/desktop/moon-of-appalacia.jpg";
   constructor() { }
 
   ngOnInit(): void {
