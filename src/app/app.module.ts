@@ -23,7 +23,7 @@ import { IntroHomeCardComponent } from './components/intro-home-card/intro-home-
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FeaturesCardComponent } from './components/features-card/features-card.component';
 import { StoriesCardComponent } from './components/stories-card/stories-card.component';
-
+import {MatSlideToggleModule} from '@angular/material/slide-toggle'; 
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,7 +50,8 @@ import { StoriesCardComponent } from './components/stories-card/stories-card.com
   imports: [
     BrowserModule,
     routing,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatSlideToggleModule
   ],
   providers: [appRoutingProviders],
   bootstrap: [AppComponent]
