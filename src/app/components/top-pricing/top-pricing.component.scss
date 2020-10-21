@@ -1,0 +1,57 @@
+
+$pureBlack: #000000;
+$lightGrey: #DFDFDF;
+$pureWhite: #ffffff;
+$font: 'DM Sans',sans-serif;
+//------------------Feat-Pric Intro ---------------------
+.topprice-cont {
+    @media screen and(max-width: 480px) {
+        flex-direction: column-reverse;
+    }
+    .text-col {
+        @media screen and (max-width: 500px){
+            width: 100%;
+        }
+        @media screen and (min-width:500px) and (max-width: 800px){
+            width:58%;
+        }
+        width: 42%;
+        @media screen and (max-width: 450px) {
+            padding: 45% 7% 10% 7% !important;
+        }
+        @media screen and (min-width:450px) and(max-width: 800px) {
+            padding: 25% 7% 27.5% 7% !important;
+        }
+        padding: 12% 12% 14% 7% !important;
+        background-color: $pureBlack;
+        height: 100% !important;
+        color: $pureWhite;
+        h2 {
+            font-size: 48px !important;
+            text-transform: uppercase;
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 16px !important;
+            margin-bottom: 30px;
+            line-height: 1.5rem;
+        }
+    }
+    .img-col {
+        @media screen and (max-width: 500px){
+            width: 100%;
+        }
+        @media screen and (min-width:500px) and (max-width: 800px){
+            width:42%;
+        }
+        width: 58%;
+        img {
+            width: 100%;
+            height: 100%;
+            @media screen and (max-width: 720px) {
+                width: 100%;
+            }
+        }
+    }
+}
