@@ -1,31 +1,45 @@
-
 <div class="pricing-section">
-    <div class="pricing-wrapper">
-<mat-slide-toggle  (click)="changePrice()">{{year? 'Yearly' : 'Monthly' }}</mat-slide-toggle>
-<div class="pricing-container">
-    <div class="pricing-container-card">
+  <div class="pricing-wrapper">
+    <mat-slide-toggle class="toggle" (click)="changePrice()">{{
+      year ? "Yearly" : "Monthly"
+    }}</mat-slide-toggle>
+    <div class="pricing-container">
+      <div class="pricing-container-card">
+          <div class="pricing-container-cardInfo">
         <h3 class="light">Basic</h3>
-        <p class="text">Includes basic usage of our platform. Recommended for new and aspiring photographers.</p>
-        <h2 class="light">{{year? '$190.00':'$19.99'}}</h2>
-        <p>per {{year? 'year':"month"}}</p>
+        <p class="text">
+          Includes basic usage of our platform. Recommended for new and aspiring
+          photographers.
+        </p>
+        <h2 class="light">{{ year ? "$190.00" : "$19.99" }}</h2>
+        <p>per {{ year ? "year" : "month" }}</p>
         <button class="btn btn-dark">PICK PLAN</button>
     </div>
-    <div class="pricing-container-card">
-        <h3 >Pro</h3>
-        <p class="text">More advanced features available. Recommended for photography veterans and professionals.</p>
-        <h2 >{{year?'$390.00':"$39.99"}}</h2>
-        <p>per {{year? 'year':"month"}}</p>
+      </div>
+      <div class="pricing-container-card">
+        <div class="pricing-container-cardInfo">
+        <h3>Pro</h3>
+        <p class="text">
+          More advanced features available. Recommended for photography veterans
+          and professionals.
+        </p>
+        <h2>{{ year ? "$390.00" : "$39.99" }}</h2>
+        <p>per {{ year ? "year" : "month" }}</p>
         <button class="btn btn-light">PICK PLAN</button>
     </div>
-    <div class="pricing-container-card">
+      </div>
+      <div class="pricing-container-card">
+        <div class="pricing-container-cardInfo">
         <h3 class="light">Business</h3>
-        <p class="text">Additional features available such as more detailed metrics. Recommended for business owners.</p>
-        <h2 class="light">{{year?'$990.00' :"$99.99"}}</h2>
-        <p>per {{year? 'year':"month"}}</p>
+        <p class="text">
+          Additional features available such as more detailed metrics.
+          Recommended for business owners.
+        </p>
+        <h2 class="light">{{ year ? "$990.00" : "$99.99" }}</h2>
+        <p>per {{ year ? "year" : "month" }}</p>
         <button class="btn btn-dark">PICK PLAN</button>
     </div>
-</div>
-</div>
-
-
+      </div>
+    </div>
+  </div>
 </div>
