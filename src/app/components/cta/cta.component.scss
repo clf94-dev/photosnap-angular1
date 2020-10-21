@@ -1,0 +1,41 @@
+$pureBlack: #000000;
+$lightGrey: #DFDFDF;
+$pureWhite: #ffffff;
+$font: 'DM Sans',
+sans-serif;
+
+
+
+//---------------------Cta section ----------------------
+.cta-cont {
+    border-left: 4px solid linear-gradient(to bottom, (#5A77FF), #BC7198, (#FFC593));
+    img {
+        width: 100% !important;
+        position: absolute;
+        z-index: -1;
+    }
+    .cta-content {
+        padding: 5% 7% 7% !important;
+        height: 370px;
+      .text-col { 
+          @media screen and(min-width:800px){
+              width: 50%;
+          }
+          width: 100%;
+        h2 {
+            color: white;
+            font-weight: 400;
+            font-size: 53px !important;
+            @media screen and (min-width: 756px) {
+                margin-right: 50% !important;
+            }
+        }}
+       .btn-col {
+        @media screen and(min-width:800px){
+            width: 50%;
+        }
+        width: 100%;button{
+            background-color: transparent;
+        }}
+    }
+}
