@@ -1,0 +1,27 @@
+
+//-----------------------Features section -----------------
+.feat-cont {
+    padding: 7%;
+    text-align: center;
+    align-items: flex-end;
+    .feat-card {
+        @media screen and (max-width:450px){
+            width: 100% !important;
+        }
+        width: 33% !important ;
+        margin-bottom: 50px;
+        padding: 1% 3% !important;
+        img {
+            margin-bottom: 20px;
+        }
+        h3 {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        p {
+            margin-bottom: 0;
+            padding: 0 15%;
+            line-height: 1.3rem;
+        }
+    }
+}
