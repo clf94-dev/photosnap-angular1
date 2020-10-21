@@ -1,1 +1,8 @@
-<p>all-features works!</p>
+<div fxLayout="row wrap" class="feat-cont">
+
+    <div class="feat-card" fxFlex.xs="100%" fxFlex.sm="33%" fxFlex.md="33%" fxFlex.lg="33%" *ngFor="let data of featuresdata; let i=index">
+        <img src="{{data.src}}" alt="{{data.imgAlt}}"/>
+        <h3>{{data.title}}</h3>
+        <p>{{data.text}}</p>
+    </div>
+</div>
