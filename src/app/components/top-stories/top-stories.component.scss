@@ -1,0 +1,70 @@
+
+$pureBlack: #000000;
+$lightGrey: #DFDFDF;
+$pureWhite: #ffffff;
+$font: 'DM Sans',
+sans-serif;
+
+
+//-----------------------TopStory section-------------------------
+.topStory-cont {
+    padding: 0;
+    .text-col {
+        @media screen and (max-width: 500px){
+            width: 100%;
+        }
+        @media screen and (min-width:500px) and (max-width: 800px){
+            width:58%;
+        }
+        width: 42%;
+        padding: 7% 10% 5% 3%;
+        color: $pureWhite;
+        @media screen and (max-width: 720px) {
+            padding: 47% 10% 10% 7%;
+            background-color: $pureBlack;
+            min-height: 650px;
+            color: $pureWhite;
+        }
+        h3 {
+            font-size: 18px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 48px !important;
+            text-transform: uppercase;
+            @media screen and (min-width: 756px) {
+                padding-right: 25%;
+            }
+            font-weight: normal;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 16px;
+            margin-bottom: 30px;
+            line-height: 1.5rem;
+        }
+        .author-p {
+            @media screen and (min-width: 720px) {
+                margin-left: 30px;
+            }
+            margin-left: 20px !important;
+            font-weight: bold;
+        }
+    }
+    .img-col {
+        @media screen and(min-width: 720px) {
+            position: absolute;
+            z-index: -1;
+        }
+        img {
+            width: 100%;
+            @media screen and (min-width: 720px) {
+                width: 150%;
+            }
+        }
+    }
+    @media screen and(max-width: 756px) {
+        flex-direction: column-reverse !important;
+    }
+}
