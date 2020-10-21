@@ -23,6 +23,7 @@ import { IntroHomeCardComponent } from './components/intro-home-card/intro-home-
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FeaturesCardComponent } from './components/features-card/features-card.component';
 import { StoriesCardComponent } from './components/stories-card/stories-card.component';
+import { TopPricingFeaturesComponent } from './components/top-pricing-features/top-pricing-features.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { StoriesCardComponent } from './components/stories-card/stories-card.com
     StoriesComponent,
     IntroHomeCardComponent,
     FeaturesCardComponent,
-    StoriesCardComponent
+    StoriesCardComponent,
+    TopPricingFeaturesComponent
   ],
   imports: [
     BrowserModule,
