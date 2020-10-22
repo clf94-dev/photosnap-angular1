@@ -1,1 +1,57 @@
-<p>footer works!</p>
+<div class="footer-section" fxLayout="row wrap">
+  <div
+    class="logo-col col"
+    fxFlex.xs="100%"
+    fxFlex.sm="100%"
+    fxFlex.md="25%"
+    fxFlex.xs="25%"
+  >
+    <img src="{{ logo }}" alt="Photosnap" />
+    <div class="social-row" fxLayout="row wrap">
+      <i className="fab fa-facebook faceb fa-gradient"></i>
+      <i className="fab fa-youtube yout"></i>
+      <i className="fab fa-twitter twitt"></i>
+      <i className="fab fa-pinterest pint"></i>
+      <i className="fab fa-instagram instag"></i>
+    </div>
+  </div>
+  <div
+    class="footer-links col"
+    fxFlex.xs="100%"
+    fxFlex.sm="100%"
+    fxFlex.md="25%"
+    fxFlex.xs="25%"
+  >
+    <a [routerLink]="['home']" class="single-link">Home</a>
+    <a [routerLink]="['stories']" class="single-link">Stories</a>
+
+    <a [routerLink]="['features']" class="single-link">Features</a>
+
+    <a [routerLink]="['pricing']" class="single-link">Pricing</a>
+  </div>
+  <div
+    class="col"
+    fxFlex.xs="100%"
+    fxFlex.sm="100%"
+    fxFlex.md="25%"
+    fxFlex.xs="25%"
+  ></div>
+  <div
+    class="copy-col col"
+    fxFlex.xs="100%"
+    fxFlex.sm="100%"
+    fxFlex.md="25%"
+    fxFlex.xs="25%"
+  >
+    <button>
+      <div fxLayout="row wrap">
+        <div fxFlex="66%">GET AN INVITE</div>
+        <div fxFlex="33%">
+          <img src="arrowW" alt="arrow" />
+        </div>
+      </div>
+    </button>
+
+    <p>Copyright 2019. All Rights Reserved</p>
+  </div>
+</div>
