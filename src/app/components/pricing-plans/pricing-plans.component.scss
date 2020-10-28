@@ -1,122 +1,146 @@
 $pureBlack: #000000;
-$lightGrey: #DFDFDF;
+$lightGrey: #dfdfdf;
 $pureWhite: #ffffff;
-$font: 'DM Sans',
-sans-serif;
+$font: "DM Sans", sans-serif;
 //-----------------------Prices section------------------
 .pricing-section {
-    padding: 5% 7% 10%;
+  padding: 5% 7% 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .pricing-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    .pricing-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0 auto;
-        .pricing-heading {
-            color: $pureBlack;
-        }
-       .toggle{
-           margin-bottom: 50px;
-       }
-        .pricing-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            .pricing-container-card {
-                background: white;
-                box-shadow: 0 6px 20px gray;
-                width: 400px;
-                height: 500px;
-                text-decoration: none;
-                &:nth-child(2) {
-                    transform: scale(1.1);
-                    background-color: $pureBlack;
-                    color: $pureWhite;
-                    z-index: 5;
-                    &:hover {
-                        transform: scale(1.11);
-                    }
-                }
-                &:hover {
-                    transform: scale(1.06);
-                    transition: all 0.3s ease-out;
-                }
-                .pricing-container-cardInfo {
-                    display: flex;
-                    flex-direction: column;
-                    padding: 15% 7%;
-                    height: 500px;
-                    text-align: center;
-                    align-items: center !important;
-                    & h3 {
-                        font-size: 24px;
-                        margin-bottom: 10px;
-                        &.light {
-                            color: $pureBlack;
-                        }
-                    }
-                    & h2 {
-                        font-size: 60px;
-                        margin-top: 20px;
-                        margin-bottom: 1px;
-                        &.light {
-                            color: $pureBlack;
-                        }
-                    }
-                    & p {
-                        font-size: 16px;
-                        padding: 0 7%;
-                        margin-bottom: 80px;
-                        &.text {
-                            margin: 20px auto;
-                        }
-                    }
-                    .pricing-container-features {
-                        margin: 1% 2%;
-                        list-style: none;
-                        padding-left: 0;
-                        padding-bottom: 30px;
-                        display: flex;
-                        flex-direction: column;
-                        &.light {
-                            color: $pureBlack;
-                        }
-                    }
-                }
-            }
-        }
+    margin: 0 auto;
+    .pricing-heading {
+      color: $pureBlack;
     }
+    .toggle {
+      margin-bottom: 50px;
+    }
+    .pricing-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .pricing-container-card {
+        background: white;
+        box-shadow: 0 6px 20px gray;
+        width: 400px;
+        height: 500px;
+        text-decoration: none;
+        &:nth-child(2) {
+          transform: scale(1.1);
+          background-color: $pureBlack;
+          color: $pureWhite;
+          z-index: 5;
+          &:hover {
+            transform: scale(1.11);
+          }
+        }
+        &:hover {
+          transform: scale(1.06);
+          transition: all 0.3s ease-out;
+        }
+        .pricing-container-cardInfo {
+          display: flex;
+          flex-direction: column;
+          padding: 20% 10% 6% 10%;
+          height: 500px;
+          text-align: center;
+          align-items: center !important;
+           h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            &.light {
+              color: $pureBlack;
+            }
+          }
+           h2 {
+            font-size: 60px;
+            margin-top: 20px;
+            margin-bottom: 1px;
+            &.light {
+              color: $pureBlack;
+            }
+          }
+           p {
+            font-size: 16px;
+            padding: 0 7%;
+            margin-bottom: 80px;
+            &.text {
+              margin: 20px auto;
+            }}
+
+            button{
+              width: 100% !important;
+              height: 50px !important;
+
+              border: none;
+              font-size: 15px;
+
+              text-transform: uppercase;
+              &.btn-light {
+                color: $pureWhite ;
+                background-color: $pureBlack;
+                border: 2px solid $pureWhite;
+                &:hover {
+                  color: $pureBlack ;
+                  background-color: $pureWhite;
+                  border-color: $pureBlack;
+                  transition: all 0.3s ease;
+                  cursor: pointer;
+                }
+              }
+              &.btn-dark{
+                  color: $pureWhite;
+                  background-color: $pureBlack;
+                  border:2px solid $pureBlack;
+                  &:hover {
+                    color: $pureBlack;
+                    background-color: $pureWhite;
+                    border-color: $pureBlack;
+                    transition: all 0.3s ease;
+                    cursor: pointer;
+                  }
+              }
+             
+            
+          }
+         
+        }
+      }
+    }
+  }
 }
 
-@media screen and (max-width:850px) {
-    .pricing-wrapper {
-        margin: 0 20px !important;
-        display: flex;
-        flex-direction: column;
-        justify-content: center !important;
-        align-items: center !important;
-        .pricing-container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 100% !important;
-            &-card {
-                width: 100%;
-                &:nth-child(2) {
-                    transform: scale(1) !important;
-                    margin: 30px;
-                    &:hover {
-                        transform: none !important;
-                    }
-                }
-                &:hover {
-                    transform: none !important;
-                }
-            }
+@media screen and (max-width: 850px) {
+  .pricing-wrapper {
+    margin: 0 20px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+    .pricing-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100% !important;
+      &-card {
+        width: 100%;
+        &:nth-child(2) {
+          transform: scale(1) !important;
+          margin: 30px;
+          &:hover {
+            transform: none !important;
+          }
         }
+        &:hover {
+          transform: none !important;
+        }
+      }
     }
+  }
 }
