@@ -14,6 +14,7 @@ export class IntroHomeCardComponent implements OnInit {
 @Input() arrow: number;
 @Input() link: string;
 @Input() src: string;
+@Input() index: number;
 @Input() imgAlt: string;
 
 

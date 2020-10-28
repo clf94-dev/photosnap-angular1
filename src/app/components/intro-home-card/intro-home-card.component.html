@@ -6,7 +6,7 @@
    <div class="text-col" fxFlex.xs="100%" fxFlex.sm="58%" fxFlex.md="42%" fxFlex.lg="42%">
       <h2>{{title}}</h2>
       <p>{{text}}</p>
-      <button>
+      <button [class]="index===0? 'btn white': 'btn'">
         <div fxLayout="row wrap" >
          <div fxFlex="66%">
                    {{btn}}
