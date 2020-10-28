@@ -42,6 +42,23 @@ sans-serif;
             line-height: 2rem;
             margin-bottom: 20px;
         }
+        .btn{
+            width: 100%;
+            height: 50px;
+            background-color: transparent;
+            border:none;
+            font-size: 15px;
+            color: $pureBlack;
+            text-align: start;
+            text-transform: uppercase;
+            &.white{
+                color:$pureWhite !important;
+            }
+            &:hover{
+                transition: all 0.3s ease;
+                cursor: pointer;
+            }
+        }
     }
 }
 
