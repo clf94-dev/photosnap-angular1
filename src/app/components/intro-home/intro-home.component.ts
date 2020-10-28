@@ -8,6 +8,7 @@ import { IntroHomeData } from './introHomeData';
 })
 export class IntroHomeComponent implements OnInit {
 public introdata: IntroHomeData[];
+
   constructor() { 
 
     this.introdata=[
