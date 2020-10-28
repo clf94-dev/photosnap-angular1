@@ -8,7 +8,7 @@ import { StoriesData } from '../stories-home/storiesData';
 })
 export class AllStoriesComponent implements OnInit {
 
-arrow="../../../assets/images/shared/desktop/arrow.svg"
+arrowW="../../../assets/images/shared/desktop/arrow copy.svg"
   public storiesdata: StoriesData[];
   constructor() { 
     this.storiesdata=[
