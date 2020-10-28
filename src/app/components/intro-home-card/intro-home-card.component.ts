@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-intro-home-card',
@@ -12,7 +13,7 @@ export class IntroHomeCardComponent implements OnInit {
 @Input() btn: string;
 @Input() btnStyle: string;
 @Input() arrow: number;
-@Input() link: string;
+@Input() link: boolean;
 @Input() src: string;
 @Input() index: number;
 @Input() imgAlt: string;
@@ -21,9 +22,12 @@ export class IntroHomeCardComponent implements OnInit {
 Arrow="../../../assets/images/shared/desktop/arrow.svg";
 ArrowW="../../../assets/images/shared/desktop/arrow copy.svg";
 
-  constructor() { }
+  constructor(private _route: ActivatedRoute, private _router: Router) { }
 
   ngOnInit(): void {
+  }
+  goToStories(){
+    this._router.navigate(['/stories']);
   }
 
 }

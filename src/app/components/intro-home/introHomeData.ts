@@ -8,6 +8,6 @@ public btnStyle:string,
 public arrow:number,
 public src:string,
 public imgAlt:string,
-public link:string,
+public link:boolean,
     ){}
 }
