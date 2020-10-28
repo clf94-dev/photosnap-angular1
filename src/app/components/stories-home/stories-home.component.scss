@@ -8,14 +8,18 @@ sans-serif;
 .stories-row{
   
     .story-cont {
-
+@media screen and (min-width:800px){width: 25%;}
+@media screen and (min-width:480px) and (max-width:800px){width: 50%;}
+width: 100%;
+height: 603px;
     .img-col {
       
         img {
-            z-index: -1;
+            z-index: -1 !important;
             width: 100% !important;
             @media screen and (max-width: 800px) {
-                width: 200% !important;
+                width: 100% !important;
+
                 &:hover {
                     scale: 1 !important;
                 }
@@ -27,8 +31,9 @@ sans-serif;
         }
     }
     .text-col {
-        position: absolute;
-        margin-top: 350px;
+        z-index: 1;
+        position: relative;
+        margin-top: -160px;
         margin-left: 40px;
         width: 270px;
         color: $pureWhite;
