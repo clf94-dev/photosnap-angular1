@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CtaComponent implements OnInit {
   background="../../../assets/images/shared/desktop/bg-beta.jpg"
-arrowW="../../../assets/images/shared/desktop/arrow copy.svg";
+ arrowW="../../../assets/images/shared/desktop/arrow copy.svg";
   constructor() { }
 
   ngOnInit(): void {
