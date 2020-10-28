@@ -50,5 +50,20 @@ height: 603px;
             width: 100%;
             margin: 10px auto;
         }
+        .btn{
+            width: 100%;
+            height: 50px;
+            background-color: transparent;
+            border:none;
+            font-size: 15px;
+            color: $pureWhite;
+            text-align: start;
+            text-transform: uppercase;
+         
+            &:hover{
+                transition: all 0.3s ease;
+                cursor: pointer;
+            }
+        }
     }
 }}

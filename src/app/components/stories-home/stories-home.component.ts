@@ -7,7 +7,7 @@ import { StoriesData } from './storiesData';
   styleUrls: ['./stories-home.component.scss']
 })
 export class StoriesHomeComponent implements OnInit {
-arrow="../../../assets/images/shared/desktop/arrow.svg"
+arrowW="../../../assets/images/shared/desktop/arrow copy.svg"
 
 public storiesdata: StoriesData[];
   constructor() { 
