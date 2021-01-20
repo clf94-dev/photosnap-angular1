@@ -3,67 +3,60 @@ $lightGrey: #DFDFDF;
 $pureWhite: #ffffff;
 $font: 'DM Sans',
 sans-serif;
-
 //----------------------Home Stories component---------------
-.stories-row{
-  
+.stories-row {
     .story-cont {
-@media screen and (min-width:800px){width: 25%;}
-@media screen and (min-width:480px) and (max-width:800px){width: 50%;}
-width: 100%;
-height: 603px;
-    .img-col {
-      
-        img {
-            z-index: -1 !important;
-            width: 100% !important;
-            @media screen and (max-width: 800px) {
-                width: 100% !important;
-
+        width: 100%;
+        .img-col {
+            img {
+                z-index: -1 !important;
+                width: 110%;
+                @media screen and (max-width: 800px) {
+                    width: 100% !important;
+                    &:hover {
+                        scale: 1 !important;
+                    }
+                }
+                height: 100%;
                 &:hover {
-                    scale: 1 !important;
+                    scale: 1.05;
                 }
             }
-            height: 100%;
-            &:hover {
-                scale: 1.05;
-            }
         }
-    }
-    .text-col {
-        z-index: 1;
-        position: relative;
-        margin-top: -160px;
-        margin-left: 40px;
-        width: 270px;
-        color: $pureWhite;
-        h3 {
-            font-size: 18px;
-            margin-bottom: 10px;
-        }
-        h4 {
-            font-size: 12px;
-            margin-bottom: 10px;
-        }
-        hr {
-            color: $lightGrey;
-            width: 100%;
-            margin: 10px auto;
-        }
-        .btn{
-            width: 100%;
-            height: 50px;
-            background-color: transparent;
-            border:none;
-            font-size: 15px;
+        .text-col {
+            z-index: 1;
+            position: absolute;
+            margin-top: 400px;
+            margin-left: 40px;
+            width: 270px;
             color: $pureWhite;
-            text-align: start;
-            text-transform: uppercase;
-         
-            &:hover{
-                transition: all 0.3s ease;
-                cursor: pointer;
+            h3 {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+            h4 {
+                font-size: 12px;
+                margin-bottom: 10px;
+            }
+            hr {
+                color: $lightGrey;
+                width: 100%;
+                margin: 10px auto;
+            }
+            .btn {
+                width: 100%;
+                height: 50px;
+                background-color: transparent;
+                border: none;
+                font-size: 15px;
+                color: $pureWhite;
+                text-align: start;
+                text-transform: uppercase;
+                &:hover {
+                    transition: all 0.3s ease;
+                    cursor: pointer;
+                }
             }
         }
     }
-}}
+}

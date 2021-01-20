@@ -1,25 +1,19 @@
 <div class="stories-row" fxLayout="row wrap">
 
-    <div
-      class="story-cont"
-      fxFlex.xs="100%"
-      fxFlex.sm="50%"
-      fxFlex.md="25%"
-      fxFlex.lg="25%"
-      *ngFor="let data of storiesdata; let i = index"
-    >
-     
-        <div class="img-col" fxFlex.lg="100%">
-          <img src="{{ data.src }}" alt="{{ data.imgAlt }}" />
+    <div class="story-cont" fxFlex.xs="100%" fxFlex.sm="50%" fxFlex.md="25%" fxFlex.lg="25%" *ngFor="let data of storiesdata; let i = index">
+
+        <div class="img-col">
+
+            <img src="{{ data.src }}" alt="{{ data.imgAlt }}" />
         </div>
         <div class="text-col" fxFlex.lg="100%">
-          <h4>{{ data.date }}</h4>
-          <h3>
-            {{ data.title }}
-          </h3>
-          <h4>{{ data.author }}</h4>
-          <hr />
-          <button class="btn" (click)="goToStories()">
+            <h4>{{ data.date }}</h4>
+            <h3>
+                {{ data.title }}
+            </h3>
+            <h4>{{ data.author }}</h4>
+            <hr />
+            <button class="btn" (click)="goToStories()">
             <div fxLayout="row wrap">
               <div fxFlex="66%">READ STORY</div>
               <div fxFlex="33%">
@@ -28,7 +22,6 @@
             </div>
           </button>
         </div>
-      
-    </div>
-  </div>
 
+    </div>
+</div>
