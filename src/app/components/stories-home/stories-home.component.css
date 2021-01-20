@@ -19,7 +19,7 @@
 
 @media screen and (max-width: 600px) {
   .stories-row .story-cont .img-col img {
-    width: 125% !important;
+    width: 130% !important;
   }
   .stories-row .story-cont .img-col img:hover {
     scale: 1 !important;
@@ -33,7 +33,7 @@
 .stories-row .story-cont .text-col {
   z-index: 1;
   position: absolute;
-  margin-top: 400px;
+  margin-top: 450px;
   margin-left: 40px;
   width: 270px;
   color: #ffffff;
