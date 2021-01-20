@@ -17,6 +17,15 @@
   }
 }
 
+@media screen and (max-width: 600px) {
+  .stories-row .story-cont .img-col img {
+    width: 125% !important;
+  }
+  .stories-row .story-cont .img-col img:hover {
+    scale: 1 !important;
+  }
+}
+
 .stories-row .story-cont .img-col img:hover {
   scale: 1.05;
 }
@@ -28,6 +37,20 @@
   margin-left: 40px;
   width: 270px;
   color: #ffffff;
+}
+
+@media screen and (max-width: 900px) {
+  .stories-row .story-cont .text-col {
+    margin-top: -25vw;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .stories-row .story-cont .text-col {
+    margin-top: -30vw;
+    margin-left: 20px;
+  }
 }
 
 .stories-row .story-cont .text-col h3 {

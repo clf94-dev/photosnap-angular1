@@ -17,6 +17,12 @@ sans-serif;
                         scale: 1 !important;
                     }
                 }
+                @media screen and (max-width: 600px) {
+                    width: 125% !important;
+                    &:hover {
+                        scale: 1 !important;
+                    }
+                }
                 height: 100%;
                 &:hover {
                     scale: 1.05;
@@ -26,6 +32,14 @@ sans-serif;
         .text-col {
             z-index: 1;
             position: absolute;
+            @media screen and (max-width: 900px) {
+                margin-top: -25vw;
+                margin-left: 20px;
+            }
+            @media screen and (max-width: 900px) {
+                margin-top: -30vw;
+                margin-left: 20px;
+            }
             margin-top: 400px;
             margin-left: 40px;
             width: 270px;
