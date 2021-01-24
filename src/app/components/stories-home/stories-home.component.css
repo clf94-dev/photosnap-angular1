@@ -19,7 +19,7 @@
 
 @media screen and (max-width: 600px) {
   .stories-row .story-cont .img-col img {
-    width: 130% !important;
+    width: 135% !important;
   }
   .stories-row .story-cont .img-col img:hover {
     scale: 1 !important;
