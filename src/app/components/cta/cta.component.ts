@@ -6,7 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cta.component.scss']
 })
 export class CtaComponent implements OnInit {
-  background="../../../assets/images/shared/desktop/bg-beta.jpg"
+  backgroundD="../../../assets/images/shared/desktop/bg-beta.jpg"
+  backgroundT="../../../assets/images/shared/tablet/bg-beta.jpg"
+  backgroundM="../../../assets/images/shared/mobile/bg-beta.jpg"
  arrowW="../../../assets/images/shared/desktop/arrow copy.svg";
   constructor() { }
 

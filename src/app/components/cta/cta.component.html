@@ -1,24 +1,12 @@
 <div class="cta-cont">
-  <img src="{{ background }}" alt="beta bag" />
+    <img class="backg" src="{{ backgroundD }}" srcset="{{backgroundD}} 1000w,{{backgroundT}} 999w, {{backgroundM}} 600w" alt="beta bag" />
 
-  <div class="cta-content" fxLayout="row wrap">
-    <div
-      class="text-col"
-      fxFlex.xs="100%"
-      fxFlex.sm="100%"
-      fxFlex.md="50%"
-      fxFlex.lg="50%"
-    >
-      <h2>We're in Beta. Get your invite today!</h2>
-    </div>
-    <div
-      class="btn-col"
-      fxFlex.xs="100%"
-      fxFlex.sm="100%"
-      fxFlex.md="50%"
-      fxFlex.lg="50%"
-    >
-    <button class="btn">
+    <div class="cta-content" fxLayout="row wrap">
+        <div class="text-col" fxFlex.xs="100%" fxFlex.sm="100%" fxFlex.md="50%" fxFlex.lg="50%">
+            <h2>We're in Beta. Get your invite today!</h2>
+        </div>
+        <div class="btn-col" fxFlex.xs="100%" fxFlex.sm="100%" fxFlex.md="50%" fxFlex.lg="50%">
+            <button class="btn">
       <div fxLayout="row wrap">
         <div fxFlex="66%">GET AN INVITE</div>
         <div fxFlex="33%">
@@ -26,6 +14,6 @@
         </div>
       </div>
     </button>
+        </div>
     </div>
-  </div>
 </div>
