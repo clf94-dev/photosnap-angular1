@@ -1,20 +1,17 @@
-
 $pureBlack: #000000;
 $lightGrey: #DFDFDF;
 $pureWhite: #ffffff;
 $font: 'DM Sans',
 sans-serif;
-
-
 //-----------------------TopStory section-------------------------
 .topStory-cont {
     padding: 0;
     .text-col {
-        @media screen and (max-width: 500px){
+        @media screen and (max-width: 500px) {
             width: 100%;
         }
-        @media screen and (min-width:500px) and (max-width: 800px){
-            width:58%;
+        @media screen and (min-width:500px) and (max-width: 800px) {
+            width: 58%;
         }
         width: 42%;
         padding: 7% 10% 5% 3%;
@@ -44,19 +41,19 @@ sans-serif;
             margin-bottom: 30px;
             line-height: 1.5rem;
         }
-        .btn{
+        .btn {
             width: 100%;
             height: 50px;
             background-color: transparent;
-            border:none;
+            border: none;
             font-size: 15px;
             color: $pureWhite;
             text-align: start;
             text-transform: uppercase;
-            &.white{
-                color:$pureWhite !important;
+            &.white {
+                color: $pureWhite !important;
             }
-            &:hover{
+            &:hover {
                 transition: all 0.3s ease;
                 cursor: pointer;
             }
@@ -75,10 +72,13 @@ sans-serif;
             z-index: -1;
         }
         img {
-            width: 100%;
-            @media screen and (min-width: 720px) {
-                width: 150%;
+            @media screen and (min-width: 1001px) {
+                width: 240%;
             }
+            @media screen and (min-width: 600px) and (max-width:999px) {
+                width: 180%;
+            }
+            width: 100%;
         }
     }
     @media screen and(max-width: 756px) {
