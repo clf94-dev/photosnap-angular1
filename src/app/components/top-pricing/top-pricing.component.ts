@@ -6,7 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./top-pricing.component.scss']
 })
 export class TopPricingComponent implements OnInit {
-  topPrice="../../../assets/images/pricing/desktop/hero.jpg"
+  topPriceD="../../../assets/images/pricing/desktop/hero.jpg"
+  topPriceT="../../../assets/images/pricing/tablet/hero.jpg"
+  topPriceM="../../../assets/images/pricing/mobile/hero.jpg"
   constructor() { }
 
   ngOnInit(): void {
