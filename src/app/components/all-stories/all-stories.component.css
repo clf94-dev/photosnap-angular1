@@ -1,0 +1,86 @@
+.stories-row {
+  background-color: #000000;
+}
+
+.stories-row .story-cont {
+  width: 100%;
+}
+
+.stories-row .story-cont .img-col img {
+  z-index: -1;
+  width: 205%;
+}
+
+@media screen and (max-width: 900px) {
+  .stories-row .story-cont .img-col img {
+    width: 100%;
+  }
+  .stories-row .story-cont .img-col img:hover {
+    scale: 1 !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .stories-row .story-cont .img-col img {
+    width: 100% !important;
+  }
+  .stories-row .story-cont .img-col img:hover {
+    scale: 1 !important;
+  }
+}
+
+.stories-row .story-cont .img-col img:hover {
+  scale: 1.05;
+}
+
+.stories-row .story-cont .text-col {
+  z-index: 1;
+  position: relative;
+  top: 400px;
+  left: -150px;
+  width: 270px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 900px) {
+  .stories-row .story-cont .text-col {
+    top: -180px;
+    left: 40px;
+  }
+}
+
+.stories-row .story-cont .text-col h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.stories-row .story-cont .text-col h4 {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.stories-row .story-cont .text-col hr {
+  color: #DFDFDF;
+  width: 100%;
+  margin: 10px auto;
+}
+
+.stories-row .story-cont .text-col .btn {
+  width: 100%;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  font-size: 15px;
+  color: #ffffff;
+  text-align: start;
+  text-transform: uppercase;
+}
+
+.stories-row .story-cont .text-col .btn.white {
+  color: #ffffff !important;
+}
+
+.stories-row .story-cont .text-col .btn:hover {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
