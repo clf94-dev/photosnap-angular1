@@ -6,7 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./top-features.component.scss']
 })
 export class TopFeaturesComponent implements OnInit {
-topFeat="../../../assets/images/features/desktop/hero.jpg"
+topFeatD="../../../assets/images/features/desktop/hero.jpg"
+topFeatT="../../../assets/images/features/tablet/hero.jpg"
+topFeatM="../../../assets/images/features/mobile/hero.jpg"
   constructor() { }
 
   ngOnInit(): void {
