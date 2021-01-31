@@ -8,11 +8,17 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
 logo='../../../assets/images/shared/desktop/logo.svg';
-  constructor(private _route: ActivatedRoute, private _router: Router) { }
+click = false
+constructor(private _route: ActivatedRoute, private _router: Router) { }
 
   ngOnInit(): void {
   }
-
+  handleClick(){
+    this.click = !this.click;
+      }
+      closeMobile(){
+        this.click=false;
+      }
   goToHome(){
     this._router.navigate(['/home']);
   }
